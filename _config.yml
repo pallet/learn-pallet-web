@@ -1,0 +1,19 @@
+permalink: /:categories/:title
+name: Learn Pallet
+pygments: true
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+domain: learn-pallet.com
+sections:
+- text: Getting Started
+  url: /getting-started
+  category: getting-started
+  drop-down: false 
+- text: Documentation
+  url: /doc
+  category: doc
+- text: Exercises
+  url: /exercises
+  category: exercise
+  drop-down: true

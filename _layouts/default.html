@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ="en"> 
+{% include head.html %}
+<body data-spy="scroll" data-target=".lp-sidebar"> 
+{% include navbar.html %}
+ <!-- content -->
+<div id="article-container" class="container">
+<div class="row-fluid">
+  <div id="sidenav" class="span3 hidden-phone">
+  {% include sidenav.html %}
+  </div> <!-- lp-sidebar -->
+  <div class="span9" id="article-span"> <!-- content col -->
+    {{content}}
+  <!-- PAGE NAVIGATOR -->
+  <div class="well" id="page-navigator">
+    <h3> Where can you go from here? </h3>
+    <table class="table table-condensed">
+      {% if page.next %}
+      <tr>
+        <td> Next </td>
+        <td> <a href="{{ page.next.url }}"> {{ page.next.title }}</a></td>
+      </tr>
+      {% endif %}
+      {% if page.previous %}
+      <tr>
+        <td> Previous </td>
+        <td> <a href="{{ page.previous.url }}">
+            {{ page.previous.title }}</a></td>
+      </tr>
+      {% endif %}
+    {% for pointer in page.pointers %}
+      <tr><td/><td>
+        <a href="{{ pointer.url }}">{{ pointer.title }}</a></td>
+    {% endfor %}
+    </table>
+  </div>
+  </div> <!-- content col -->
+</div> <!--content row -->
+
+<div id="mini-sidenav" class="row-fluid visible-phone">
+  {% include sidenav.html %}
+</div>
+
+</div> <!--container -->
+
+{% include scripts.html %}
+{% include footer.html %}
+</body>
+</html>
