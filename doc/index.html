@@ -3,10 +3,11 @@ layout: post
 title: Documentation
 date: 2013-05-28 06:51:22
 categories: doc
+index: true
 ---
 <ul class="unstyled">
 {% for post in site.categories.doc reversed %}
 <li><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-<p>{{ post.excerpt | markdownify }}</p></li>
+{{ post.excerpt | markdownify }}</li>
 {% endfor %}
 </ul>
