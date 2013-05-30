@@ -2,7 +2,7 @@
 layout: post
 title:  A Clojure post
 date:   2013-05-28 06:51:22
-categories: jekyll update exercise documentation
+categories: doc getting-started
 section: basic
 ---
 

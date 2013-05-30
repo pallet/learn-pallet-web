@@ -1,4 +1,4 @@
-permalink: /:categories/:title
+permalink: /:title
 name: Learn Pallet
 pygments: true
 markdown: redcarpet
@@ -14,6 +14,6 @@ sections:
   url: /doc
   category: doc
 - text: Exercises
-  url: /exercises
+  url: /exercise
   category: exercise
   drop-down: true

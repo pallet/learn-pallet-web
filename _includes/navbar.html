@@ -19,8 +19,7 @@
           {% for section in site.sections %}
             {% if section.disabled != true %}
               {% assign active = nil %}
-              {{post.categories}}
-              {% if post.categories contains section.category %}
+               {% if page.categories contains section.category %}
                  {% assign active = "active" %}
               {% endif %}
               <li class="{{active}}">

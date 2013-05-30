@@ -1,8 +1,12 @@
 <div class="well" id="sidenav-well">
   <ul class="nav nav-list">
   <li class="nav-header">Getting Started</li>
+  {% for el in site.categories.getting-started reversed %}
+     <li {% if page.url == el.url %} class="active" {% endif %} >
+         <a href="{{ el.url }}"> {{ el.title }}</a></li>
+  {% endfor %}  
   <li class="nav-header">Documentation</li>
-  {% for el in site.categories.documentation reversed %}
+  {% for el in site.categories.doc reversed %}
      <li {% if page.url == el.url %} class="active" {% endif %} >
          <a href="{{ el.url }}"> {{ el.title }}</a></li>
   {% endfor %}
