@@ -2,6 +2,7 @@ permalink: /:categories/:title
 name: Learn Pallet
 pygments: true
 markdown: redcarpet
+githubsrc: https://github.com/pallet/learn-pallet-web/tree/master/
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 domain: learn-pallet.com

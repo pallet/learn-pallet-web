@@ -11,6 +11,7 @@
   </div> <!-- lp-sidebar -->
   <div class="span9" id="article-span"> <!-- content col -->
     {{content}}
+  {% if page.index != true %}
   <!-- PAGE NAVIGATOR -->
   <div class="well" id="page-navigator">
     <h3> Where can I go from here? </h3>
@@ -35,7 +36,8 @@
     </table>
   </div>
   <p> This page has errors. Can I fix it?
-  <a href="http://github.com/pallet/learn-pallet-web/{{ page.path }}">Yes!</a> </p>
+  <a href="{{ site.githubsrc}}{{ page.path }}">Yes!</a> </p>
+  {% endif %}
   </div> <!-- content col -->
 </div> <!--content row -->
 
