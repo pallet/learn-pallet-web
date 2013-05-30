@@ -1,4 +1,4 @@
-permalink: /:title
+permalink: /:categories/:title
 name: Learn Pallet
 pygments: true
 markdown: redcarpet

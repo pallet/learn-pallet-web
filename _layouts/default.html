@@ -4,7 +4,7 @@
 <body data-spy="scroll" data-target=".lp-sidebar"> 
 {% include navbar.html %}
  <!-- content -->
-<div id="article-container" class="container">
+<div id="article-container" class="container-fluid">
 <div class="row-fluid">
   <div id="sidenav" class="span3 hidden-phone">
   {% include sidenav.html %}
@@ -13,7 +13,7 @@
     {{content}}
   <!-- PAGE NAVIGATOR -->
   <div class="well" id="page-navigator">
-    <h3> Where can you go from here? </h3>
+    <h3> Where can I go from here? </h3>
     <table class="table table-condensed">
       {% if page.next %}
       <tr>
@@ -34,6 +34,8 @@
     {% endfor %}
     </table>
   </div>
+  <p> This page has errors. Can I fix it?
+  <a href="http://github.com/pallet/learn-pallet-web/{{ page.path }}">Yes!</a> </p>
   </div> <!-- content col -->
 </div> <!--content row -->
 

@@ -2,7 +2,7 @@
 layout: post
 title:  A Clojure post
 date:   2013-05-28 06:51:22
-categories: doc getting-started
+categories: doc
 section: basic
 ---
 
